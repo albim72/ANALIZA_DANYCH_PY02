@@ -75,3 +75,18 @@ def generuj_liste(pot,min,max):
 pt = generuj_liste(5,109,88900)
 print(pt)
 
+
+#przykład 6
+def witaj(imie):
+    return f"Miło Cię widzieć {imie}"
+
+def konkurs(imie,punkty):
+    return f"Uczestnik konkursu -> {imie}, punkty: {punkty}"
+
+def osoba(funkcje,*args):
+    return funkcje(*args)
+
+print(osoba(witaj,"Olga"))
+print(osoba(konkurs,"Leon",33))
+
+
