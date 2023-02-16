@@ -35,3 +35,13 @@ osoba = {
 print(osoba)
 print(osoba["miasto"])
 print(osoba[888])
+
+osoba.pop(888)
+print(osoba)
+
+osoba["kolor oczu"] = "niebieski"
+print(osoba)
+
+print(osoba.items())
+print(osoba.keys())
+print(osoba.values())
