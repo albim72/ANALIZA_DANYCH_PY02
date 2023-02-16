@@ -1,3 +1,5 @@
+import math
+
 #przykład 1
 n=100
 
@@ -12,3 +14,14 @@ def policz(a,b,c,y):
 print(policz(3,7,8,1))
 print(policz(5.8,12,0.045,5.88))
 print(n)
+
+#przykład 2
+def liczymy(a,b=1,c=6):
+    return math.sqrt(a*b*c)
+
+print(liczymy(2,5,4))
+print(liczymy(3,3,3))
+print(liczymy(6,7.7))
+print(liczymy(6,7.7,3))
+print(liczymy(8))
+print(liczymy(2.2,c=16))
