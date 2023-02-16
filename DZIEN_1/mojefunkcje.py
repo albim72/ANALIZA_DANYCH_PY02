@@ -33,3 +33,45 @@ def rank(*lang,nrrank,**inne):
 rank("Python","Java","C++",nrrank=23)
 rank("Python","Java","JavaScript","C++","Go",nrrank=27,ver="5.5")
 
+#przykład 4 - funckja lambda
+print((lambda d:d+66)(4))
+print((lambda d:d+66)(88.09))
+print((lambda d,u:d+66*u)(-98,8))
+
+b = lambda a,b,c=3:(a+b)/c
+print(b(4,7,1))
+print(b(9,3))
+
+
+def multi(n):
+    return lambda a:a*n
+
+print(multi(9)(7))
+
+num = [67,2,4,-5,18,90,111,0,-45,10,9,2,16,9,88]
+
+nbparz = list(filter(lambda x:x%2==0,num))
+print(nbparz)
+
+cube = list(map(lambda x:x**3,num))
+print(cube)
+
+def dodaj(x):
+    return x+9
+
+dziewiec = list(map(dodaj,num))
+print(dziewiec)
+
+
+#zbuduj nową listę która będzie się składała z wartości całkowitych z przedziału [1,100000] każda podniesiona do kwadratu
+#list comprehension
+
+kwadraty = [i**2 for i in range(1,100001)]
+print(kwadraty)
+
+def generuj_liste(pot,min,max):
+    return [i**pot for i in range(min,max+1)]
+
+pt = generuj_liste(5,109,88900)
+print(pt)
+
