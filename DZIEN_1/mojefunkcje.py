@@ -25,3 +25,11 @@ print(liczymy(6,7.7))
 print(liczymy(6,7.7,3))
 print(liczymy(8))
 print(liczymy(2.2,c=16))
+
+#przykład 3
+def rank(*lang,nrrank,**inne):
+    print(f"ranking języków programowania nr {nrrank} -> miejsce pierwsze: {lang[0]}, drugie: {lang[1]}, trzecie {lang[2]}")
+
+rank("Python","Java","C++",nrrank=23)
+rank("Python","Java","JavaScript","C++","Go",nrrank=27,ver="5.5")
+
